@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
+//import Basic from './Basic'
 
 //import "./styles.css";
 
@@ -9,6 +10,7 @@ const App = ({ values, errors, touched, isSubmitting }) => {
   return (
     <Form>
       <div className="App">
+        <FormikApp >
         {touched.email && errors.email && <p>{errors.email}</p>}
         <Field type="email" name="email" placeholder="Email" />
         <br />
@@ -33,8 +35,10 @@ const App = ({ values, errors, touched, isSubmitting }) => {
         <button type="submit" disabled={isSubmitting}>
           Submit
         </button>
+        </FormikApp>
       </div>
     </Form>
+    
   );
 };
 const FormikApp = withFormik({
@@ -66,4 +70,5 @@ const FormikApp = withFormik({
   }
 })(App);
 
-render(<FormikApp />, document.getElementById("root"));
+render(<FormikApp />, document.getElementById("root"))
+export default App
