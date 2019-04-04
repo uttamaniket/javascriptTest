@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 class Addtodo extends Component {
     state = {
         content: ''
+        
     }
     handleChange =(e) => {
         this.setState({
