@@ -1,4 +1,5 @@
 import Header from './Header'
+import page from '..';
 
 const layoutStyle = {
   margin: 20,

@@ -1,27 +1,45 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_599a58a60c43245180de.js"
-  ],
+  "devFiles": [],
   "pages": {
-    "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/about": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
     ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/components/Header": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
+    ],
+    "/components/MyLayout": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
     ],
-    "/about": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/post": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
     ],
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-f0c6edbea5b547edc23f.js",
+      "static/chunks/commons.091e0c4a6434c00235bc.js",
+      "static/runtime/main-a4925bcfbdabd22cf4dd.js"
     ]
   }
 }
