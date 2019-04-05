@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{myj8:function(n,o,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/components/MyLayout",function(){var n=w("Mp32");return{page:n.default||n}}])}},[["myj8",1,0]]]);
