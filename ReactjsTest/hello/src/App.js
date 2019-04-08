@@ -12,13 +12,32 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import Stylesheet from './components/Stylesheet'
+import Inline from './components/Inline'
+import'./appStyle.css'
+import styles from './appStyle.module.css'
+import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import Fragment from './components/Fragment'
+import Table from './components/Tables'
+import PureComp from './components/PureComp'
+import ParentComp from './components/ParentComp';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
           <p>
-            <NameList />
+            <ParentComp />
+            {/* <Table /> */}
+            {/* <Fragment /> */}
+            {/* <LifecycleA /> */}
+            {/* <Form /> */}
+            {/* <h1 className='error'>Error</h1> */}
+            {/* <h1 className={styles.success}>Success</h1> */}
+            {/* <Inline /> */}
+            {/* <Stylesheet /> */}
+            {/* <NameList /> */}
             {/* <UserGreeting /> */}
             {/* <ParentComponent /> */}
             {/* <EventBind /> */}
