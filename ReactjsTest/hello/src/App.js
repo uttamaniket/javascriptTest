@@ -22,13 +22,34 @@ import Fragment from './components/Fragment'
 import Table from './components/Tables'
 import PureComp from './components/PureComp'
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <p>
-            <ParentComp />
+      <ErrorBoundary>
+              <Hero heroName="Batman"></Hero>
+      </ErrorBoundary>
+              <ErrorBoundary>   
+                 <Hero heroName="Superman"></Hero>
+              </ErrorBoundary>
+              <ErrorBoundary>   
+                <Hero heroName="Joker"></Hero>
+
+            </ErrorBoundary>
+          {/* <p> */}
+            
+            {/* <PortalDemo /> */}
+            {/* <FRParentInput /> */}
+            {/* <FocusInput /> */}
+            {/* <RefsDemo /> */}
+            {/* <ParentComp /> */}
             {/* <Table /> */}
             {/* <Fragment /> */}
             {/* <LifecycleA /> */}
@@ -57,7 +78,7 @@ class App extends Component {
             
             {/* <Message /> */}
             {/* <Counter /> */}
-          </p>      
+          {/* </p>       */}
       </div>
     );
   }
