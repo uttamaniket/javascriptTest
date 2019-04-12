@@ -20071,7 +20071,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2Fhome%2Faniket%2FDesktop%2FjavascriptTest%2Fhello-next%2Fpages%2Fpost.js ***!
   \***********************************************************************************************************************************************/
@@ -20094,5 +20094,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=post.js.map
