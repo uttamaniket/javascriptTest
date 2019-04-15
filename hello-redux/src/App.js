@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css'
 import { connect } from 'react-redux'
+import { type } from 'os';
 
 class App extends Component {
   constructor(props) {
@@ -12,20 +13,23 @@ class App extends Component {
     }
   }
   
-  clickHandler=()=>{
-    this.setState({
-      count: this.state.count + 1
-    })
+//   clickHandler=()=>{
+//     this.setState({
+//       count: this.state.count + 1
+//     })
     
-}
+// }
   render() {
     console.log(this.state.count)
     return (
       <div className="App">
-       <p>{this.state.message}</p> 
-       <p> {this.state.count}</p> 
-       hello ------{this.props.name}
-        <button onClick={this.clickHandler}>click me</button>
+       
+       hello ------{this.props.name}<br></br>
+       my age is {this.props.age}
+        
+        <h1>{this.props.user}</h1>
+        <button onClick={this.props.update}>Click me</button><br></br>
+        <button onClick={this.props.update1}>Click me1</button>
       </div>
     );
   }
@@ -34,14 +38,22 @@ class App extends Component {
  function mapStateToProps(state){
    console.log("state",state)
    return{
-  name : state.user.name
+  name : state.user.name,
+  age : state.user.age,
+  user : state.username.user
    }
 }
 
-function mapDispatchToProps(state){
-  
+function mapDispatchToProps(dispatch){
+  console.log("hello")
   return{
-
+    update: () =>{
+        dispatch({ type : 'update_user', payload:{name:'aman', age: 40}})
+        dispatch({ type : 'update_user1', payload:{name:'aman',age:400}})
+    },
+   update1: () =>{
+    dispatch({ type : 'user', payload:'shiv'})
+   } 
   }
 }
 
