@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css'
 import { connect } from 'react-redux'
 import { type } from 'os';
+import Frontpage from './frontpage';
 
 class App extends Component {
   constructor(props) {
@@ -23,13 +24,14 @@ class App extends Component {
     console.log(this.state.count)
     return (
       <div className="App">
-       
+{/*        
        hello ------{this.props.name}<br></br>
        my age is {this.props.age}
         
         <h1>{this.props.user}</h1>
         <button onClick={this.props.update}>Click me</button><br></br>
-        <button onClick={this.props.update1}>Click me1</button>
+        <button onClick={this.props.update1}>Click me1</button> */}
+        <Frontpage />
       </div>
     );
   }

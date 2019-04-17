@@ -1,14 +1,15 @@
 {
-  "name": "hello-redux",
+  "name": "reactstrap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
     "react-scripts": "2.1.8",
-    "redux-saga": "^1.0.2",
-    "styled-components": "^4.2.0"
+    "redux": "^4.0.1",
+    "video-react": "^0.13.6",
+    "reactstrap":"^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
