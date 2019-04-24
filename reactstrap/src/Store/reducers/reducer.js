@@ -11,7 +11,8 @@ const reducer = (state= initialState, action) => {
         return {
             ...state,
             age: state.age + action.value,
-            history:state.history.concat({age:state.age + action.value})
+            history:state.history.concat({id:Math.random(),age:state.age + action.value}),
+            loading:false
         }
       
     case 'AGE_DOWN':
@@ -19,10 +20,17 @@ const reducer = (state= initialState, action) => {
         return {
             ...state,
             age: state.age - action.value,
-            history:state.history.concat({age:state.age - action.value})
+            history:state.history.concat({id:Math.random(),age:state.age - action.value})
         }
-      
-   
-} return newState}
+    case 'DEL_ITEM':
+        return {
+            ...state,
+            history:state.history.filter(el => el.id !== action.key)
+        }
+   case 'LOADING' :
+        return newState.loading =true
+}
+ return newState
+}
 
 export default reducer
